@@ -17,6 +17,10 @@ product visuable for the user.
 
 The page is so far a basci html design with some css styling and a tiny bit of JS funcionality. 
 
+Mid project i wanted to display the live updated price of a kwh for the vistitors, and used some time learning about api.
+
+To host the page, i bought my first domene and sign up with hostinger. Threw this i had to learn about filezilla 
+
 
 
 Here you can describe what tasks you decided to solve.
