@@ -19,16 +19,25 @@ The page is so far a basci html design with some css styling and a tiny bit of J
 
 Mid project i wanted to display the live updated price of a kwh for the vistitors, and used some time learning about api.
 
-To host the page, i bought my first domene and sign up with hostinger. Threw this i had to learn about filezilla 
-
+To host the page, i bought my first domene and signed up with hostinger. Threw this i learned about filezilla, and validator.
 
 
 Here you can describe what tasks you decided to solve.
 > Please provide a short description of your project.
 
 ## How to run
-For example ***yarn start***
-> Remember to package all dependencies!
+ 
+The page is hosted at https://oscarlarssen.com/electricity/
 
 ## Comments
+
+Threw the project i have learned a little bit about many techonlogies. 
+Another approach could be to focus mainly on design or functionality, but for me it was motivating to end up with something
+visual and easy accsesed.
+
+
+
 Comments regaring design choices, decisions, or anything at all.
+
+
+
