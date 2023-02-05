@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+
+<html lang="nb-NO">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Strøm</title>
+    <link rel="stylesheet" href="stil.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="quote"
+      href="https://api.whatdoestrumpthink.com/api/v1/quotes/random"
+    />
+  </head>
+  <body>
+    <div class="sidemargin">
+      <div class="tittellinje">
+        <h1 class="overskrift"> &#9889; Strøm i hjemmet &#9889;</h1>
+        <h4>- Lett å snakke om - vanskelig å forstå -</h4>
+      </div>
+    </div>
+    <h3 class="intro">
+      Strømpriser er trolig årets smalltalkemne, og det er fort gjort å bli
+      overveldet av alle råd og meninger om temaet. <br> Her får du enkel
+      informasjon om forbruk, priser og levrandører slik at du kan finne en
+      god løsning tilpasset din hustand og livsstil.
+    </h3>
+    <div class="api">
+
+      <button onclick="var region = 'NO1' ">Øst-Norge</button>
+      <button onclick="var region ='NO5' ">Vest-Norge</button>
+      <button onclick="region ='NO4'">Nord-Norge</button>
+      <button onclick="region ='NO2'">Sør-Norge</button>
+      <button onclick="region ='NO3'">Midt-Norge</button>
+
+     
+
+      <button onclick="myFunction('NO1')">Øst-Norge-test</button>      
+      <script>
+
+      function myFunction(input) {
+        document.getElementById("demo").innerHTML = input;
+      }
+      </script>
+
+      <h1><span class="pris" id="prisNok"></span> Nok per kwh </1>
+        <div>
+          <p class="textUnderApi">Dagens strømpris i [by(bergen)] </p>
+          <p>Hvor mye legger strømlevrandøren din på?</p>       
+ </div>
+        
+
+    </div>
+    
+    <div class="knappelinje">
+      <button onclick="window.location.href='//velgriktig.oscarlarssen.com/'">
+        - Velg ny levrandør -  </button>
+      <button id="forbruk" onclick="alert(meldingForbruk)">
+        - Forstå forbruk -
+      </button>
+    </div>
+    <div class="bildelinje">
+      <div class="row">
+        <div class="column">
+          <img src="Graphincreas.jpg" alt="Snow" style="width: 100%" />
+        </div>
+        <div class="column">
+          <img src="Graphincreas.jpg" alt="Forest" style="width: 100%" />
+        </div>
+        <div class="column">
+          <img src="Graphincreas.jpg" alt="Mountains" style="width: 100%" />
+        </div>
+      </div>
+    </div>
+    <div class="ideer">
+      <h4>Huskeliste</h4>
+      * Energi krevd for en dusj 
+      * quiz * statistikk *animasjon *vaskemaskin
+      *dagskostnader (check)"
+      <img class="cred" src="hvakosterstrommen.png" alt="strøm levert av - " />
+    </div>
+    
+  </body>
+  <script>
+    // Eksempelmelding på onclcik
+    let meldingForbruk = "eksempler på forbruk - ";
+
+    // henter kostnaden per kwh via api
+
+    // variabel for dagens dato
+    let now = new Date()
+
+    // variabel for måned - den viser listeverdier januar = 0
+    let month = 1 + (now.getMonth())
+
+    // funkjson for å sette 0 foran månednummer/ dato - formatet apilinken vil ha
+
+    function addZero(number) {
+
+      // adds a string "0" infront of the number
+      rightFormat = number
+      if (number < 9){
+        rightFormat = "0"+ number
+      }
+    return rightFormat; 
+  }
+
+
+
+
+    fetch(`https://www.hvakosterstrommen.no/api/v1/prices/${now.getFullYear()}/${addZero(month)}-${addZero(now.getDate())}_${'NO4'}.json`)
+      .then((res) => res.json())
+      .then((data) => {
+        
+
+        // oppretter variabel for timeskift
+        let tidspunkt = new Date()
+        let time = tidspunkt.getHours()
+
+
+        
+        
+        let prisNok = data[time].NOK_per_kWh;
+        // forer span med prisen
+        document.getElementById("prisNok").innerHTML = prisNok;
+
+        //tester i consollen
+
+      });
+  </script>
+</html>
