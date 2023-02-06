@@ -47,6 +47,8 @@ The hompage is made to work good also on mobile phones, that can sadly not be sa
 
 this i would also improve with more time.
 
+I would also try to make the code better structured, and remove all acsess code.
+
 All in all i enjoyed working with the task, and appreciate the oppertunity to attend. 
 
 
