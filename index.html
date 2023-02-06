@@ -5,139 +5,152 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Velgriktig</title>
-    <link rel="stylesheet" href="substil.css" />
+    <title>Strøm</title>
+    <link rel="stylesheet" href="stil.css" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap"
-      rel="stylesheet"
-    />
-    <link />
+    
   </head>
-
   <body>
     <div class="sidemargin">
       <div class="tittellinje">
-        <h1 class="overskrift">&#9889; Strøm i hjemmet &#9889;</h1>
+        <h1 class="overskrift"> &#9889; Strøm i hjemmet &#9889;</h1>
         <h4>- Lett å snakke om - vanskelig å forstå -</h4>
       </div>
     </div>
+    <h3 class="intro">
+      Strømpriser er trolig årets smalltalkemne, og det er fort gjort å bli
+      overveldet av alle råd og meninger om temaet. <br> Her får du enkel
+      informasjon om forbruk, priser og levrandører slik at du kan finne en
+      god løsning tilpasset din hustand og livsstil.
+    </h3>
+    <div class="api">
 
+        
+      <script>
+        
+        function myFunction(input) {
+          document.getElementById("demo").innerHTML = input;
+        }
+        </script>
 
-    <div class="centerButton">
-    <button class="tilbakeTilForsiden" onclick="window.location.href='//oscarlarssen.com/electricity/'">
-      - Tilbake til forsiden -
-    </button>
+<h1><span class="pris" id="prisNok"></span> Nok per kwh </1>
+  <div>
+    <p class="textUnderApi">Dagens strømpris i <span id="regionsnavn"></span> </p>
+
+    <div class="regionknapper"> 
+
+    <button  onclick="renderApi('NO1')">Øst-Norge</button>
+    <button onclick="renderApi('NO5') ">Vest-Norge</button>
+    <button onclick="renderApi('NO4')">Nord-Norge</button>
+    <button onclick="renderApi('NO2')">Sør-Norge</button>
+    <button onclick="renderApi('NO3')">Midt-Norge</button>
   </div>
 
+    <p>Hvor mye legger strømlevrandøren din på?</p>       
+ </div>
+        
 
-    <div class="textinnhold">
-      <h1>Valg av levrandør</h1>
-      <h3>
-        Å velge riktig strømselskap handler om flere ting en pris. <br>
-        Noen verdsetter kundeservice og forutsigbarhet, mens andre vil ha smart teknologi og nye løsninger <br>
-        Kategoriene under gir en enkel oversikt over forskjellene vi mener er viktigst.
-
-        <span class="hvordanbytte"> Selve byttet gjøres enklest ved å bestille strøm fra din nye levrandør, så ordner de resten</span>
-
-      </h3>
-      <div class="textbox">
-      <div class="valgIntro">
-          
-      </div>
     </div>
     
+    <div class="knappelinje">
+      <button onclick="window.location.href='//velgriktig.oscarlarssen.com/'">
+        - Velg ny levrandør -  </button>
+      <button id="forbruk" onclick="alert(meldingForbruk)">
+        - Forstå forbruk -
+      </button>
     </div>
-
-       <div class="kategorier">
-         <div class="PrisogTek">
-          <h2> &#36; Pris og teknologi &#36; </h2>
-          <div class="valgbokser">
-            Paralelt med energiprisens stigning har det dukket opp flere nye strømselskapetselskaper  med fokus på lave priser, gjennomsiktighet
-             og smart forbruk. Dette har vært en stor glede for mange, men gitt utfordringer for noen. 
-            Under er det listet opp noen punkter som taler for og imot disse selskapene.
-
-
-            <br>  
-
-            <span class="fordelerUlemper">  Fordeler: </span> <br>
-            <ul>
-            <li>Lavt til ingen påslag per kWh</li>
-              <li>Gode applikasjoner</li>
-              <li>   Muligheter for å følge forbruk i detalj </li>
-              <li>Enkel tilkobling til smarthusteknologi.</li>
-          </ul>
-
-            <span class="fordelerUlemper">Ulemper:</span> <br>
-
-            <ul>
-              <li> Begrenset mulighet til å ringe kundeservice.</li>
-              <li> Mangler stabilitet. Eks. Tibber tar nå betalt for 1.5 måneders forbruk.</li>
-
-          </ul>
-
-          
-
-          <span class="fordelerUlemper">  Våre anbefalinger i denne kategorien </span> <br>
-            <ul>
-            <li><a href="https://tibber.com/no?modal=signup-no"> Tibber</a></li>
-        
-              <li> <a href="https://vibb.no/?utm_source=bytt"> Vibb</a> </li>
-          </ul>
-
-
-          </div>
-         </div>
-         <div class="kundeserviceForutsigbarhet">
-            <h2> &#9742; Kundeservice  &  Forutsigbarhet &#9742;</h2>
-
-              <div class="valgbokser">
-                For de som har eid en bolig i mange år, er det noen store navn som trolig er kjente.
-                 Selskaper som Fjordkraft, Hafslund og Gudbrandsdal energi har vært på markedet lenge, 
-                 og har mange lojale kunder. Disse og flere i samme kategori har i nyere tid fått en del kritikk 
-                 for uforståelige prismodeller, og tullete påslag. Likevel scorer flere av dem høyt i tester på grunn av god kundeservice og forutsigbarhet  <br>
-
-                  <!-- Kundeservice og forutsigbarhet-->
-                 <span class="fordelerUlemper">  Fordeler: </span> <br>
-                 <ul>
-                 <li>God og tilgjengelig kundeservice på telefon</li>
-                   <li>Forutsigbar avtale </li>
-                   <li> Stabile betalingsløsninger </li>
-                   <li>Flere tilbyr gjennomfakturering av nettleien</li>
-                   <li>Tilrstrekkelig funksjonalitet i appene for de fleste</li>
-               </ul>
-     
-                 <span class="fordelerUlemper">Ulemper:</span> <br>
-     
-                 <ul>
-                   <li> I gjennomsnitt litt høyere påslag per kwh</li>
-                   <li> Begrenset funksjonalitet i appene for de som ønsker smartstyring og forbruk i sanntid</li>
-                   <li> Noen ekstrafunksjoner som er litt vanskelig å fostå - eks. prislås</li>
-     
-               </ul>
-
-               <span class="fordelerUlemper">Våre anbefalinger i denne kategorien:</span> <br>
-     
-               <ul>
-                 <li> <a href="https://www.fjordkraft.no/strom/"> Fjordkraft </a> </li>
-                 <li><a href="https://www.ge.no/?gclid=Cj0KCQiA54KfBhCKARIsAJzSrdo3Gd124Td9w6C9nUtANfo7NROfMvOQK3ucAFl_BjwJOO5VLoKQwUMaAh-sEALw_wcB">Gudbrandsdal Energi</a></li>
-   
-             </ul>
-
-
-       
-
-              </div>
-
-         </div>
-
+    <div class="bildelinje">
+      <div class="row">
+        <div class="column">
+          <img src="Graphincreas.jpg" alt="Snow" style="width: 100%" />
+        </div>
+        <div class="column">
+          <img src="Graphincreas.jpg" alt="Forest" style="width: 100%" />
+        </div>
+        <div class="column">
+          <img src="Graphincreas.jpg" alt="Mountains" style="width: 100%" />
+        </div>
       </div>
-      
+    </div>
+    <div class="ideer">
+      <h4> ^ Eksempelbilder ^ - Kan fylles med ideene under </h4>
+      * Energi krevd for en dusj 
+      * quiz * statistikk *animasjon *vaskemaskin
+      "
+      <img class="cred" src="hvakosterstrommen.png" alt="strøm levert av - " />
+    </div>
+    
+  </body>
+  <script>
+    // Eksempelmelding på onclcik
+    let meldingForbruk = "eksempler på forbruk - ";
+
+    // henter kostnaden per kwh via api
+
+    // variabel for dagens dato
+    let now = new Date()
+
+    // variabel for måned - den viser listeverdier januar = 0
+    let month = 1 + (now.getMonth())
+
+    // funkjson for å sette 0 foran månednummer/ dato - formatet apilinken vil ha
+
+    function addZero(number) {
+
+      // adds a string "0" infront of the number
+      rightFormat = number
+      if (number < 9){
+        rightFormat = "0"+ number
+      }
+    return rightFormat; 
+  }
+
+    renderApi('NO5')
+
+    function renderApi(regionInput){
+
+
+    fetch(`https://www.hvakosterstrommen.no/api/v1/prices/${now.getFullYear()}/${addZero(month)}-${addZero(now.getDate())}_${regionInput}.json`)
+      .then((res) => res.json())
+      .then((data) => {
+        
+
+        // oppretter variabel for timeskift
+        let tidspunkt = new Date()
+        let time = tidspunkt.getHours()
+
+        
+        let prisNok = data[time].NOK_per_kWh;
+        // forer span med prisen
+        document.getElementById("prisNok").innerHTML = prisNok;
+
+        //tester i consollen
+        updateregion(regionInput)
+
+
+      });}
+
+    function updateregion(inputRegion){
+      if (inputRegion == 'NO1'){
+        var displayRegion = 'Øst-Norge'
+      }
+      if (inputRegion == 'NO2'){
+        var displayRegion = 'Sør-Norge'
+      }
+      if (inputRegion == 'NO3'){
+        var displayRegion = 'Midt-Norge'
+      }
+      if (inputRegion == 'NO4'){
+        var displayRegion = 'Nord-Norge'
+      }
+      if (inputRegion == 'NO5'){
+        var displayRegion = 'Vest-Norge'
+      }
+
+      document.getElementById("regionsnavn").innerHTML = displayRegion;
      
 
-    </div>
-  </body>
-  
+
+    }
+  </script>
 </html>
