@@ -5,10 +5,10 @@ Website to help people pick the right  power provider for their needs // Norway
 
 ## Task description
 
- I chose to make a website focused on educating the user, and providing some tools to pick the right provider. 
+ I chose to make a website focused on educating the user, and providing some tools for picking the right provider. 
 
 A key focus is that every homeowner has diffrent needs when it comes to customor service, stability and predictability. 
-Therfore it isn not nececearly the price alone that is important. As an example, i would recomoend one of the bigger companies 
+Therfore it is not nececearly the price alone that is important. As an example, i would recomend one of the bigger companies 
 with good customer service, rather than the cheaper online based ones to my grandmother. The reason is because she values the 
 opputinity to call somebody instead of chatting way more then the money she saves.
 
